@@ -55,6 +55,8 @@ async function main() {
         res.setHeader("authorization", "expired");
       }
 
+      res.setHeader("Access-Control-Allow-Origin", "*");
+
       // return context to resolvers
       return {
         User,

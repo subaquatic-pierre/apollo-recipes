@@ -34,7 +34,6 @@ async function main() {
     listen: { host: SERVER_HOST, port: SERVER_PORT },
     context: async ({ req, res }) => {
       // expose headers for client
-      res.set("Access-Control-Expose-Headers", "*");
 
       // get token from header or set empty string
       const token = req.headers.authorization || "";
@@ -56,6 +55,7 @@ async function main() {
       }
 
       res.setHeader("Access-Control-Allow-Origin", "*");
+      res.setHeader("Access-Control-Expose-Headers", "*");
 
       // return context to resolvers
       return {

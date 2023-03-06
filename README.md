@@ -14,6 +14,7 @@ leveraging the power of React, Apollo and GraphQL.
 ### Help needed
 
 - Update deps
+- Migrate frontend to Gatsby JS
 
 ## Installation
 

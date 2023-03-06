@@ -17,11 +17,13 @@
     "react-apollo": "^3.1.5",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.1",
+    "react-scripts": "^5.0.1",
+    "serve": "^14.2.0",
     "waait": "^1.0.5"
   },
   "scripts": {
     "start": "react-scripts start",
+    "serve": "serve -s build -p 8006",
     "build": "react-scripts build",
     "test": "react-scripts test --watchAll --coverage",
     "test:debug": "node --inspect-brk ./node_modules/jest/bin/jest.js --runInBand --watch",
@@ -44,7 +46,7 @@
   },
   "devDependencies": {
     "@testing-library/react": "^9.5.0",
-    "babel-plugin-module-resolver": "^4.0.0",
+    "babel-plugin-module-resolver": "^5.0.0",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.2",
     "react-dom-instance": "^2.0.0"

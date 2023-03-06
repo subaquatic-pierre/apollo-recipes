@@ -56,7 +56,7 @@ const authLink = new ApolloLink((operation, forward) => {
 });
 
 // create link to server
-const httpLink = new HttpLink({ uri: "http://127.0.0.1:8005/" });
+const httpLink = new HttpLink({ uri: process.env.REACT_APP_API_URI });
 
 // create new apollo client
 const client = new ApolloClient({

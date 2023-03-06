@@ -1,1 +1,1 @@
-export const siteTitle = 'React Apollo Recipes'
+export const siteTitle = "Apollo Recipes";

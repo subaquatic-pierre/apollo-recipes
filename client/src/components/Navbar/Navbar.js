@@ -44,7 +44,7 @@ const Navbar = () => {
   const history = useHistory();
 
   const AuthNav = () => (
-    <div aria-label="auth-nav" style={{ display: "flex" }} x>
+    <div aria-label="auth-nav" style={{ display: "flex" }}>
       <MenuItem
         onClick={() => {
           history.push("/add-recipe");

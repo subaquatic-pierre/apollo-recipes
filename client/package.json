@@ -11,6 +11,7 @@
     "@testing-library/user-event": "^7.2.1",
     "apollo-boost": "^0.4.9",
     "apollo-mocked-provider": "^3.3.0",
+    "env-cmd": "^10.1.0",
     "graphql": "^15.3.0",
     "jwt-decode": "^2.2.0",
     "react": "^16.13.1",
@@ -23,7 +24,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "serve": "serve -s build -p 8006",
+    "serve": "serve -s build -h ${CLIENT_HOST} -p ${CLIENT_PORT}",
     "build": "react-scripts build",
     "test": "react-scripts test --watchAll --coverage",
     "test:debug": "node --inspect-brk ./node_modules/jest/bin/jest.js --runInBand --watch",

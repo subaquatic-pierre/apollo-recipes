@@ -88,7 +88,7 @@ const Recipes = () => {
 
   return (
     <>
-      <Typography variant="h1">Apollo Recipes</Typography>
+      <Typography variant="h3">Apollo Recipes</Typography>
       <Box my={4}>
         <Typography variant="h6">
           Please note this project is still in beta <br />
